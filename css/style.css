@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font: 14px 'Bad Script', Helvetica, Arial, sans-serif;
+	line-height: 1.4em;
+	background: #f5f5f5;
+	color: #4d4d4d;
+	min-width: 230px;
+	max-width: 550px;
+	margin: 0 auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-weight: 300;
+}
+.h1 {
+	font-size: 4em;
+	opacity: .8;
+	display: block;
+	text-align: center;
+	padding: 30px;
+	color: maroon;
+	// font-family: 'Josefin Sans', sans-serif;
+	font-weight: 100;
+	text-shadow: 3px 3px 10px rgba(150, 150, 150, 0.89);
+	line-height: 60px;
+}
+.main {
+	width: 600px;
+	margin: 10px auto;
+	text-align: center;
+
+	-webkit-box-shadow: -2px -4px 28px -3px rgba(158,144,158,1);
+	-moz-box-shadow: -2px -4px 28px -3px rgba(158,144,158,1);
+	box-shadow: -2px -4px 28px -3px rgba(158,144,158,1);
+}
+
+.item__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: #fff;
+}
+.item__list li {
+	font-family: 'Bad Script', cursive;
+	text-align: left;
+	border-bottom: 1px solid;
+	padding: 15px 0;
+	// pl60
+	position: relative;
+	font-size: 24px;
+	border-bottom: 1px solid #ededed;
+	white-space: pre-line;
+	word-break: break-all;
+	padding: 15px 60px 15px 60px;
+	display: block;
+	line-height: 1.2;
+	transition: color 0.4s;
+}
+
+.item__delete {
+	float: right;
+	color: maroon;
+	opacity: .8;
+	// margin-right: 0px;
+}
+.item__value {
+	font-family: 'Bad Script', cursive;
+	width: 100%;
+	border: none;
+	line-height: 1.2;
+	padding: 19px 0;
+	text-align: center;
+	font-size: 24px;
+	border-top: 1px  solid #FF4040;
+	border-bottom: 1px solid #FF4040;
+	// -webkit-box-shadow: inset 0px 7px 17px -9px rgba(94,0,16,1);
+	// -moz-box-shadow: inset 0px 7px 17px -9px rgba(94,0,16,1);
+	// box-shadow: inset 0px 7px 17px -9px rgba(94,0,16,1);
+	position: relative;
+	outline:none;
+}
+.wrapper__input {
+	position: relative;
+}
+.wrapper__input .fa {
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	z-index: 10;
+	opacity: 0.7;
+	
+}
+// .item__value:before {
+// 	font-family: 'FontAwesome'
+// 	content: '\f0a4';
+// 	display: block;
+// 	width: 30px;
+//   height: 30px;
+// 	position: absolute;
+// 	top: 3px;
+// 	left: 15px;
+// }
+ // f0a4
+.item__value[placeholder] {
+	opacity: .3;
+}
+.item__add {
+	font-family: 'PT Sans', sans-serif;
+	width: 100%;
+	border: none;
+	padding: 15px 0;
+	cursor: pointer;
+	background: #BF3030;
+	color: #fff;
+	font-weight: 400;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
