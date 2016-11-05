@@ -8,8 +8,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans:100,100i,300,300i,400,400i,600|PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 	<link href="https://fonts.googleapis.com/css?family=Bad+Script&amp;subset=cyrillic" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-  <script src="js/tmpl.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.1.1.js"></script> -->
+  <!-- <script src="js/libs/tmpl.js"></script> -->
   <style>
   	.item__delete {
   		cursor: pointer;
@@ -30,19 +30,21 @@
 		</div>
 	<ul class="item__list"></ul>
 	<div class="controlls">
-		<!-- <button class="item__add">ДОБАВИТЬ</button> -->
 	</div>
 </div>
 	
 </script>
+		<p class="bottom__p">Окончание ввода <code>Enter</code> <br>
+		Редактирование полей <code>Double-Click</code></p>
 
 <script type="text/template" id="list__template">
 
 	<%for (var i = 0; i < data.length; i++) {%>
-		<li class="inemN"><%= data[i] %> <span data-value="<%= data[i] %>" class="item__delete"><i class="fa fa-times" aria-hidden="true"></i></span></li>
+		<li class="itemN"><%= data[i] %> <span data-value="<%= data[i] %>" class="item__delete"><i class="fa fa-times" aria-hidden="true"></i></span></li>
 	<%};%>
 
 </script>
-	<script src="js/script.js"></script>
+	<script data-main="js/app" src="js/libs/require.js"></script>
+	<!-- <script src="js/script.js"></script> -->
 </body>
 </html>

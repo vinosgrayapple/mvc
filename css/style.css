@@ -4,7 +4,7 @@
 }
 body {
 	font: 14px 'Bad Script', Helvetica, Arial, sans-serif;
-	line-height: 1.4em;
+	line-height: 2em;
 	background: #f5f5f5;
 	color: #4d4d4d;
 	min-width: 230px;
@@ -56,8 +56,25 @@ body {
 	word-break: break-all;
 	padding: 15px 60px 15px 60px;
 	display: block;
-	line-height: 1.2;
+	line-height: 1em;
 	transition: color 0.4s;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none; 
+	max-height: 70px;
+}
+.item__list li input {
+	font-family: 'Bad Script', cursive;
+	width: 100%;
+	border: none;
+	line-height: 1em;
+	padding: 8px 0;
+	text-align: center;
+	font-size: 24px;
+	border-top: 1px  solid #0094FF;
+	border-bottom: 1px solid #0094FF;
+	position: relative;
+	outline:none;
 }
 
 .item__delete {
@@ -70,15 +87,12 @@ body {
 	font-family: 'Bad Script', cursive;
 	width: 100%;
 	border: none;
-	line-height: 1.2;
+	line-height: 2em;
 	padding: 19px 0;
 	text-align: center;
 	font-size: 24px;
 	border-top: 1px  solid #FF4040;
 	border-bottom: 1px solid #FF4040;
-	// -webkit-box-shadow: inset 0px 7px 17px -9px rgba(94,0,16,1);
-	// -moz-box-shadow: inset 0px 7px 17px -9px rgba(94,0,16,1);
-	// box-shadow: inset 0px 7px 17px -9px rgba(94,0,16,1);
 	position: relative;
 	outline:none;
 }
@@ -93,20 +107,8 @@ body {
 	opacity: 0.7;
 	
 }
-// .item__value:before {
-// 	font-family: 'FontAwesome'
-// 	content: '\f0a4';
-// 	display: block;
-// 	width: 30px;
-//   height: 30px;
-// 	position: absolute;
-// 	top: 3px;
-// 	left: 15px;
-// }
- // f0a4
-.item__value[placeholder] {
-	opacity: .3;
-}
+
+
 .item__add {
 	font-family: 'PT Sans', sans-serif;
 	width: 100%;
@@ -118,4 +120,10 @@ body {
 	font-weight: 400;
 	letter-spacing: 2px;
 	font-size: 20px;
+}
+.bottom__p {
+	margin-top: 30px;
+	text-align: center;
+	font-family: 'PT Sans';
+	opacity: 0.8;
 }
